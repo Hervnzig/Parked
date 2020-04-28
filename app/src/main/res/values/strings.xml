@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Parked Application</string>
+    <string name="logo_image">logo_image</string>
+    <string name="privacy_statement">Privacy statement</string>
+    <string name="log_in_to_parked">Log in to Parked</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="are_you_new_here_sign_up">Are you new here? Sign Up</string>
+    <string name="continue_from_where_you_left_off">Continue from where you left off!</string>
+    <string name="give_out_a_ticket">Give out a ticket</string>
+    <string name="view">View</string>
+    <string name="today_s_tickets">Today\'s tickets</string>
+    <string name="given_today">Given Today</string>
+    <string name="to_confirm">To confirm</string>
+    <string name="ticket_payment_rate">Ticket payment rate</string>
+    <string name="tickets">tickets</string>
+    <string name="profile">Profile</string>
+    <string name="help">help</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

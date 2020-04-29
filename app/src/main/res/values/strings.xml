@@ -19,4 +19,27 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome, back</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="total_tickets">Total tickets</string>
+    <string name="take_another_ticket">Take another ticket</string>
+    <string name="owner">Owner</string>
+    <string name="time_of_arrival">Time of arrival</string>
+    <string name="departure">Departure</string>
+    <string name="price">Price</string>
+    <string name="log_in">Log in</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="parked">Parked</string>
+    <string name="edit">edit</string>
+    <string name="total_tickets">Total tickets</string>
+    <string name="paid_tickets">Paid tickets</string>
+    <string name="pending_tickets">Pending</string>
+    <string name="my_cars">My cars</string>
+    <string name="settings_layout">settings</string>
+    <string name="legal">Legal</string>
+    <string name="logout">Logout</string>
+    <string name="agent">Agent</string>
+    <string name="client">Client</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="complete_sign_up">Complete sign up</string>
 </resources>

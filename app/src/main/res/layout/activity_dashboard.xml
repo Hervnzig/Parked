@@ -42,6 +42,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/today_tickets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -64,6 +65,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tickets_pending"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -82,10 +84,12 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_create_ticket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/commonGreen"
         android:text="@string/give_out_a_ticket" />
 
     <LinearLayout
@@ -101,6 +105,7 @@
             android:textSize="21sp" />
 
         <TextView
+            android:id="@+id/percentage_ticket_success_payment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -109,6 +114,13 @@
             android:textSize="36sp"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_tickets"
+        android:textSize="21sp"
+        android:layout_marginTop="20dp"/>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -131,7 +143,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="0.4"
+                    android:layout_weight="0.5"
                     android:text="3000"
                     android:textSize="21sp" />
 
@@ -146,10 +158,13 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/btn_view_all_tickets"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="@string/view" />
+                android:backgroundTint="@color/commonGreen"
+                android:layout_weight="0.9"
+                android:textAllCaps="false"
+                android:text="View tickets" />
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
@@ -160,6 +175,7 @@
         android:orientation="vertical">
 
         <RelativeLayout
+            android:id="@+id/go_to_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
@@ -189,6 +205,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/got_to_help"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">

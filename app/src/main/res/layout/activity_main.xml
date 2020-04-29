@@ -27,7 +27,7 @@
         android:fontFamily="@font/quicksand_bold"
         android:gravity="center_horizontal"
         android:lineSpacingExtra="42sp"
-        android:text="Parked"
+        android:text="@string/parked"
         android:textAlignment="center"
         android:textColor="#2e3041"
         android:textSize="42sp"

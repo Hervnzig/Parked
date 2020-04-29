@@ -10,18 +10,19 @@
     tools:context=".LoginAgent">
 
     <ImageView
-        android:layout_marginTop="10dp"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_gravity="right"
+        android:layout_marginTop="10dp"
         android:src="@drawable/main_logo_icon"
-        android:tint="@color/colorAccent"/>
+        android:tint="@color/colorWhite" />
+
     <TextView
         android:id="@+id/login_welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome, back"
-        android:textColor="@color/colorAccent"
+        android:text="@string/welcome_back"
+        android:textColor="@color/colorWhite"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -32,44 +33,48 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your phone number"
-            android:textColorHint="@color/colorAccent"
-            app:boxStrokeColor="@color/colorPrimaryDark"
-            app:hintTextColor="@color/colorAccent"
+            android:hint="@string/your_phone_number"
+            android:textColorHint="@color/colorWhite"
             app:boxBackgroundMode="outline"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            app:boxStrokeColor="@color/colorWhite"
+            app:hintTextColor="@color/colorWhite">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
-                android:textColor="@color/colorAccent"
                 android:drawablePadding="10dp"
-                android:drawableTint="@color/colorAccent"
-                android:inputType="number"/>
+                android:drawableTint="@color/colorWhite"
+                android:inputType="number"
+                android:textColor="@color/colorWhite" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your phone number"
-            android:textColorHint="@color/colorAccent"
-            app:boxStrokeColor="@color/colorPrimaryDark"
-            app:hintTextColor="@color/colorAccent"
-            app:boxBackgroundMode="outline">
+            android:hint="Password"
+            android:textColorHint="@color/colorWhite"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/colorWhite"
+            app:hintTextColor="@color/colorWhite"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorWhite">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/ic_lock_outline_black_24dp"
-                android:drawablePadding="10dp"
-                android:inputType="textPassword"
-                android:textColor="@color/colorAccent"
                 android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
-                android:drawableTint="@color/colorAccent"/>
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorWhite"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,14 +87,15 @@
             android:gravity="end"
             android:padding="5dp"
             android:text="Forgot Password"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorWhite"
             android:textSize="14sp" />
+
         <Button
             android:id="@+id/agentLoginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Log in"/>
+            android:text="Log in" />
 
     </LinearLayout>
 

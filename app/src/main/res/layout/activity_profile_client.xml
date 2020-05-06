@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_image"
         android:layout_gravity="center"
-        android:text="Herve Musangwa"
         android:textSize="21sp" />
 
     <TextView
@@ -33,7 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_name"
         android:layout_gravity="center"
-        android:text="078794623 / 0723439"
         android:textSize="14sp" />
 
     <Button

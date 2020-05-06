@@ -28,10 +28,8 @@
     <string name="departure">Departure</string>
     <string name="price">Price</string>
     <string name="log_in">Log in</string>
-    <string name="your_phone_number">Your phone number</string>
     <string name="parked">Parked</string>
     <string name="edit">edit</string>
-    <string name="total_tickets">Total tickets</string>
     <string name="paid_tickets">Paid tickets</string>
     <string name="pending_tickets">Pending</string>
     <string name="my_cars">My cars</string>

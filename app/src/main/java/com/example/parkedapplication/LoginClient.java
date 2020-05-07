@@ -56,5 +56,16 @@ public class LoginClient extends AppCompatActivity {
                 finish();
             }
         });
+
+
+
+//        login_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(LoginClient.this, TicketsClient.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
     }
 }

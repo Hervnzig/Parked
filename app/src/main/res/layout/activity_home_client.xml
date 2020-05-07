@@ -74,7 +74,7 @@
                     android:layout_marginTop="8dp"
                     android:text="View tickets"
                     android:textColor="@color/colorHalfBlack"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/service_content"
@@ -105,7 +105,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/background_box_white"
         android:orientation="horizontal"
@@ -142,7 +142,7 @@
                     android:layout_marginTop="8dp"
                     android:text="Your cars"
                     android:textColor="@color/colorHalfBlack"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/service_description"
@@ -174,7 +174,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/background_box_half_black"
         android:orientation="horizontal"
@@ -211,7 +211,7 @@
                     android:layout_marginTop="12dp"
                     android:text="Find parking"
                     android:textColor="@color/colorHalfBlack"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/service_search_parking"
@@ -239,14 +239,16 @@
         </LinearLayout>
 
     </LinearLayout>
-    <TextView
-        android:id="@+id/home_to_profile"
+    <Button
+        android:id="@+id/homeToProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Checkout profile"
         android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorWhite"
+        android:textColor="@color/colorHalfBlack"
+        android:padding="10dp"/>
 
 </LinearLayout>

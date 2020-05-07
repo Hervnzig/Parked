@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_image"
+        android:text="Pax Elysee Mfura"
         android:layout_gravity="center"
         android:textSize="21sp" />
 
@@ -31,6 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/profile_name"
+        android:text="078755343"
         android:layout_gravity="center"
         android:textSize="14sp" />
 
@@ -73,9 +75,9 @@
                     android:textSize="21sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/total_tickets"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     android:textSize="14sp" />
@@ -108,9 +110,9 @@
                     android:textSize="21sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/paid_tickets"
                     android:textAppearance="?attr/textAppearanceHeadline6"
                     android:textSize="14sp" />
@@ -143,9 +145,9 @@
                     android:textSize="21sp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:text="@string/pending_tickets"
                     android:textAppearance="?attr/textAppearanceHeadline6"

@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class HomeClient extends AppCompatActivity {
 
-    private Button toTicketPage, toCarsPage, toNewParking;
-    private TextView toProfile;
+    private Button toTicketPage, toProfile, toCarsPage, toNewParking;
+//    private TextView ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +20,21 @@ public class HomeClient extends AppCompatActivity {
 
         toTicketPage = (Button)findViewById(R.id.go_to_tickets_page);
         toCarsPage = (Button)findViewById(R.id.go_to_cars_page);
-        toNewParking = (Button) findViewById(R.id.go_to_parking_page);
-        toProfile = (TextView)findViewById(R.id.home_to_profile);
+        toNewParking = (Button)findViewById(R.id.go_to_parking_page);
+        toProfile = (Button)findViewById(R.id.homeToProfile);
 
         toTicketPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeClient.this, TicketsClient.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        toCarsPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeClient.this, ClientCars.class);
                 startActivity(intent);
                 finish();
             }

@@ -38,7 +38,7 @@ public class SignUpClient extends AppCompatActivity {
                     // Create bundle of ID that will be used to get data on client Profile
                     Bundle data = new Bundle();
                     data.putString("id", String.valueOf(result));
-                    Intent intent = new Intent(SignUpClient.this, ProfileClient.class);
+                    Intent intent = new Intent(SignUpClient.this, HomeClient.class);
                     intent.putExtras(data);
                     startActivity(intent);
                     finish();

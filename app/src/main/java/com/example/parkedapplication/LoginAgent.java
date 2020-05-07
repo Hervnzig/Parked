@@ -25,26 +25,34 @@ public class LoginAgent extends AppCompatActivity {
         phone = findViewById(R.id.phone);
         password = findViewById(R.id.password);
 
+//        agentLoginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Cursor res = database.login(phone.getText().toString(), password.getText().toString());
+//
+//                if (res.getCount()==0){
+//                    Toast.makeText(LoginAgent.this,"Invalid Login Details",Toast.LENGTH_LONG).show();
+//                }else {
+//                    while (res.moveToNext()){
+//                        // Create bundle of ID that will be used to get data on client Profile
+//                        Bundle data = new Bundle();
+//                        data.putString("id", String.valueOf(res.getString(0)));
+//                        Intent intent = new Intent(LoginAgent.this, ProfileAgent.class);
+//                        intent.putExtras(data);
+//                        startActivity(intent);
+//                        finish();
+//                    }
+//
+//                }
+//
+//            }
+//        });
         agentLoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor res = database.login(phone.getText().toString(), password.getText().toString());
-
-                if (res.getCount()==0){
-                    Toast.makeText(LoginAgent.this,"Invalid Login Details",Toast.LENGTH_LONG).show();
-                }else {
-                    while (res.moveToNext()){
-                        // Create bundle of ID that will be used to get data on client Profile
-                        Bundle data = new Bundle();
-                        data.putString("id", String.valueOf(res.getString(0)));
-                        Intent intent = new Intent(LoginAgent.this, ProfileAgent.class);
-                        intent.putExtras(data);
-                        startActivity(intent);
-                        finish();
-                    }
-
-                }
-
+                Intent intent = new Intent(LoginAgent.this, Dashboard.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

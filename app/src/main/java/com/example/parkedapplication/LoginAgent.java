@@ -37,7 +37,7 @@ public class LoginAgent extends AppCompatActivity {
                         // Create bundle of ID that will be used to get data on client Profile
                         Bundle data = new Bundle();
                         data.putString("id", String.valueOf(res.getString(0)));
-                        Intent intent = new Intent(LoginAgent.this, ProfileAgent.class);
+                        Intent intent = new Intent(LoginAgent.this, AgentDashboard.class);
                         intent.putExtras(data);
                         startActivity(intent);
                         finish();

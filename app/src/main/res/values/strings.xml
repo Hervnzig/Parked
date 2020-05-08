@@ -40,4 +40,11 @@
     <string name="client">Client</string>
     <string name="contact_us">Contact Us</string>
     <string name="complete_sign_up">Complete sign up</string>
+    <string name="permission_camera_rationale">Give me camera access</string>
+    <string name="low_storage_error">You Low on Storage</string>
+    <string name="no_camera_permission">No Camera Permission</string>
+    <string name="ok">Hey</string>
+    <string name="create_a_ticket">Create A Ticket</string>
+    <string name="check_in_car">Check in Car</string>
+    <string name="content_description_media">content_description_media</string>
 </resources>

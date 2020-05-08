@@ -18,7 +18,7 @@ public class ProfileClient extends AppCompatActivity {
         mydatabase= new ClientsDatabase(this);
         profile_name = findViewById(R.id.profile_name);
         profile_description = findViewById(R.id.profile_description);
-        writeDataToProfile();
+        //writeDataToProfile();
     }
 
     public  void writeDataToProfile(){

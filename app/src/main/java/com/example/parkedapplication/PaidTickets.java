@@ -3,10 +3,15 @@ package com.example.parkedapplication;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -15,6 +20,12 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class PaidTickets extends Fragment {
+
+    View v;
+    private RecyclerView recyclerView;
+    private List<PaidTicketsModel> lstPaidTickets;
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -49,6 +60,20 @@ public class PaidTickets extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        lstPaidTickets = new ArrayList<>();
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+        lstPaidTickets.add(new PaidTicketsModel("12-06-2019", "to 0789789212", "500 rwf", R.drawable.plate));
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -59,6 +84,11 @@ public class PaidTickets extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_paid_tickets, container, false);
+        v = inflater.inflate(R.layout.fragment_paid_tickets, container, false);
+        recyclerView = (RecyclerView) v.findViewById(R.id.paid_tickets_recyclerview);
+        RecyclerViewAdapter recyclerAdapter = new RecyclerViewAdapter(getContext(), lstPaidTickets);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setAdapter(recyclerAdapter);
+        return v;
     }
 }

@@ -44,8 +44,8 @@ public class TicketsClient extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
-        viewPagerAdapter.addFragment(todayTickets, "Today");
         viewPagerAdapter.addFragment(paidTickets, "Paid");
+        viewPagerAdapter.addFragment(todayTickets, "Today");
         viewPagerAdapter.addFragment(pendingTickets, "Pending");
 
         viewPager.setAdapter(viewPagerAdapter);

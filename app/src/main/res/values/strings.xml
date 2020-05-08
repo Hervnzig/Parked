@@ -40,11 +40,13 @@
     <string name="client">Client</string>
     <string name="contact_us">Contact Us</string>
     <string name="complete_sign_up">Complete sign up</string>
-    <string name="permission_camera_rationale">Give me camera access</string>
-    <string name="low_storage_error">You Low on Storage</string>
-    <string name="no_camera_permission">No Camera Permission</string>
-    <string name="ok">Hey</string>
-    <string name="create_a_ticket">Create A Ticket</string>
-    <string name="check_in_car">Check in Car</string>
-    <string name="content_description_media">content_description_media</string>
+    <string name="have_an_account_login">Have an account? Login</string>
+    <string name="look_for_parking_space_near">look for parking space near</string>
+    <string name="create_a_ticket">Check in Car</string>
+    <string name="content_description_media">Camer</string>
+    <string name="check_in_car">Check in</string>
+    <string name="ok">ok</string>
+    <string name="permission_camera_rationale">App would like to request Camera Access</string>
+    <string name="low_storage_error">You low on storage</string>
+    <string name="no_camera_permission">App has no Access to Camer</string>
 </resources>
